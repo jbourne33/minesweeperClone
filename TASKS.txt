@@ -2,7 +2,7 @@
 *********************************************************
 
 GENERAL:
-    -TODO: Setup you JavaFX project in IntelliJ, and immediately check all files from your source directory into a .git repository. Push your repository to gitlab and add me as a member to your project (a reporter has sufficient access).
+    Setup you JavaFX project in IntelliJ, and immediately check all files from your source directory into a .git repository. Push your repository to gitlab and add me as a member to your project (a reporter has sufficient access).
 
     -TODO: Contains: [Extra Credit!] You may choose to include a timer that keeps track of how long the user spends on the level.
 
@@ -47,8 +47,8 @@ public class  Minefield:
 
 
 VIEW:
-    -TODO: Contains: A choice-box that allows the user to select one of at least three levels of difficulty (in the screen shot above, this element lives in the upper left corner).
-    -TODO: Contains: A start/restart button that when pressed (re)starts the game with a board sized based on the level of difficulty.
+    -Contains: A choice-box that allows the user to select one of at least three levels of difficulty (in the screen shot above, this element lives in the upper left corner).
+    -Contains: A start/restart button that when pressed (re)starts the game with a board sized based on the level of difficulty.
     -TODO: Contains: An unexposed cell counter (upper right corner of screen shot above). When the game begins the counter should display the cells that do not hide a bomb. As the user progressively exposes cells, this counter will decrease to 0. If the user exposes a bomb before the counter arrives at 0, the game is over and the player loses. If the counter reaches 0 without the player exposing a bomb, the player wins, and a win message should be displayed (for the counter text)
 
 
@@ -62,5 +62,5 @@ CONTROLLER:
 
 TURN IT IN:
 
- -TODO: Tar up your src folder including your .git folder and email it to me. Be sure that your Main.java file includes your name, and that your tarfile includes your name as well.
+ -Tar up your src folder including your .git folder and email it to me. Be sure that your Main.java file includes your name, and that your tarfile includes your name as well.
 

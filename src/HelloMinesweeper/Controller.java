@@ -5,32 +5,54 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.MenuButton;
+import javafx.application.Application;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
 
 public class Controller {
 
 	@FXML
 	private Button startButton;
 	@FXML
-	private MenuButton difficultyMenu;
+	private ChoiceBox difficultyMenu;
 	@FXML
 	private Label bombStatus;
 	@FXML
 	private Label messageBox;
+	@FXML
+	private GridPane gridpane;
+
+	private Minefield field;
+	private boolean finished = false;
+	private boolean win = false;
+	private int turn=0;
 
     @FXML
-    private void initialize() {
+    private void initialize() { // tie to start button
 	    Parent root = FXMLLoader.load(getClass().getResource("MineSweeperView.fxml"));
 	    primaryStage.setTitle("Hello Minesweeper");
 	    primaryStage.setScene(new Scene(root, 300, 275));
 	    primaryStage.show();messageBox.setText("");
-        Minefield mf = new Minefield(); // maybe put this outside of initialize
+	    difficultyMenu.getValue.toString("Easy");
+	    difficultyMenu.getValue.toString("Medium");
+	    difficultyMenu.getValue.toString("Hard");
+        Minefield field = new Minefield(); // maybe put this outside of initialize
     }
+
+	private void updateField(Minefield field) {
+		gridpane.
+		return;
+	}
+
+
 
     // Initialize
     // create minefield
-    // event handlers
+    // event handler, left click
+	// event handler, right click
 
 //    - The Controller should create a new MineField Model in response to the programs initialization or in response to a press of the “start” button
 //    - The Controller should call a mark method in the MineField object to toggle a cells marked status in response to a left mouse click
