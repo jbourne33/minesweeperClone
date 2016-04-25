@@ -22,7 +22,7 @@
             <Button fx:id="startButton" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="90.0" text="Start" HBox.hgrow="SOMETIMES" />
             <AnchorPane prefHeight="31.0" prefWidth="164.0">
                <children>
-                  <Label fx:id="bombStatus" alignment="CENTER_RIGHT" layoutX="210.0" layoutY="9.0" nodeOrientation="LEFT_TO_RIGHT" text="BombStatus" AnchorPane.rightAnchor="14.0" />
+                  <Label fx:id="bombsLeft" alignment="CENTER_RIGHT" layoutX="210.0" layoutY="9.0" nodeOrientation="LEFT_TO_RIGHT" text="BombStatus" AnchorPane.rightAnchor="14.0" />
                </children>
             </AnchorPane>
          </children>

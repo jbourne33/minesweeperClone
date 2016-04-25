@@ -14,45 +14,89 @@ import javafx.stage.Stage;
 
 public class Controller {
 
-	@FXML
-	private Button startButton;
-	@FXML
-	private ChoiceBox difficultyMenu;
-	@FXML
-	private Label bombStatus;
-	@FXML
-	private Label messageBox;
-	@FXML
-	private GridPane gridpane;
+	@FXML private Button startButton;
+	@FXML private ChoiceBox<String> difficultyMenu = new ChoiceBox<>();
+	@FXML private Label bombsLeft;
+	@FXML private Label messageBox;
+	@FXML private GridPane gridpane;
+	@FXML private Button[][] minefield;
 
-	private Minefield field;
+
+	private Minefield mf;
 	private boolean finished = false;
 	private boolean win = false;
-	private int turn=0;
+	private int turn = 0;
 
-    @FXML
-    private void initialize() { // tie to start button
-	    Parent root = FXMLLoader.load(getClass().getResource("MineSweeperView.fxml"));
-	    primaryStage.setTitle("Hello Minesweeper");
-	    primaryStage.setScene(new Scene(root, 300, 275));
-	    primaryStage.show();messageBox.setText("");
-	    difficultyMenu.getValue.toString("Easy");
-	    difficultyMenu.getValue.toString("Medium");
-	    difficultyMenu.getValue.toString("Hard");
-        Minefield field = new Minefield(); // maybe put this outside of initialize
-    }
-
-	private void updateField(Minefield field) {
-		gridpane.
+	private int rows, cols;
+	private void setRowsCols(String difficulty){
+		switch(difficulty){
+			case "Easy":
+				rows = 8;
+				cols = 8;
+				break;
+			case "Medium":
+				rows = 16;
+				cols = 16;
+				break;
+			case "Hard":
+				rows = 30;
+				cols = 16;
+		}
 		return;
 	}
 
+    @FXML
+    private void initialize() { // tie to start button
+//	    primaryStage.setTitle("Hello Minesweeper");
+	    messageBox.setText("");
+	    difficultyMenu.getItems().addAll("Easy", "Medium", "Hard");
+	    difficultyMenu.setValue("Easy");
+		bombsLeft.setText(Integer.toString(mf.unexposedCount()));
+		// startGame()
+    }
+
+//	@FXML
+//	private void startGame(){
+	//	do{
+	////	mf = new Minefield();   // Minefield plants own mines and calculates states
+	//		turn++;
+	//
+	//		System.out.println("Turn "+turn);
+	//		Minefield.show();
+	//		finished = Minefield.setPosition();
+	//
+	//		if(!finished){
+	//			mf.openNeighbors();
+	//			finished = mf.win();
+	//		}
+	//
+	//	}while(!finished);
+	//
+	//	if(mf.win()){
+	//		System.out.println("Congratulations, you let the 10 fields with the mines in "+turn+" turns");
+	//		mf.showMines();
+	//	} else {
+	//		System.out.println("Mine! You lost!");
+	//		mf.showMines();
+	//	}
+	//
+	//	private void updateField(Minefield field) {
+	//		gridpane.
+	//		return;
+	//	}
+	//
+	//	button.setOnAction
+	//
+	//	button.setOnMouseClicked(new EventHandler<MouseEvent>() {
+	//		@Override
+	//		public void handle(MouseEvent mouseEvent) {
+	//			if(mouseEvent.getButton().equals(MouseButton.SECONDARY)){
+	//				System.out.println("Set flag on the button");
+	//			}
+	//		}
+	//	});
 
 
-    // Initialize
-    // create minefield
-    // event handler, left click
-	// event handler, right click
 
 //    - The Controller should create a new MineField Model in response to the programs initialization or in response to a press of the “start” button
 //    - The Controller should call a mark method in the MineField object to toggle a cells marked status in response to a left mouse click
@@ -71,3 +115,12 @@ public class Controller {
 //	As cells are revealed, the unexposed cell counter should update itself, counting
 //	down towards zero.
 }
+
+
+/*
+* 	button.setOnAction(new EventHandler<ActionEvent>() {
+* 		public void handle(ActionEvent event) {
+	* 		System.out.println("Got an action!");
+		*}
+*	}
+* */

@@ -17,8 +17,8 @@ public class Minefield {
 
     // Default constructor which will be used for easy mode with 8x8 field
     public Minefield(){
-        rows = 7;
-        cols = 7;
+        rows = 8;
+        cols = 8;
 		numMines = 0;
 		marked = 0;
 		totalMines = 10;
@@ -149,8 +149,13 @@ public class Minefield {
 	many cells can be exposed without setting off a bomb
 	*/
     public int unexposedCount(){ // REQUIRED METHOD
-		return (((rows+1) * (cols+1)) - numMines - marked);
+
+	    return (((rows+1) * (cols+1)) - numMines - marked);
     }
+
+	public boolean win(){
+		return marked == numMines;
+	}
 
 
     private class Tile extends StackPane {
