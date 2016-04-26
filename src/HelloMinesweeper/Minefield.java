@@ -90,22 +90,27 @@ public class Minefield {
 	public void computeTileStates(){
 		for (int y = 0; y < rows; y++){
 			for (int x = 0; x < cols; x++){
-				int numMines = 0;
-				if(minefield[x-1][y-1].tileState == -1) numMines++;
-				if(minefield[x-1][y].tileState == -1) numMines++;
-				if(minefield[x-1][y+1].tileState == -1) numMines++;
-				if(minefield[x][y-1].tileState == -1) numMines++;
-				if(minefield[x][y+1].tileState == -1) numMines++;
-				if(minefield[x+1][y-1].tileState == -1) numMines++;
-				if(minefield[x+1][y].tileState == -1) numMines++;
-				if(minefield[x+1][y+1].tileState == -1) numMines++;
-				if(minefield[x][y].tileState != -1) {
-					minefield[x][y].tileState = numMines;
+				if(minefield[x][y].tileState == -1){
+					incrNeighbors(x,y);
 				}
 			}
 		}
 	}
 
+	private void incrNeighbors(int x, int y){
+		for(int j=-1; j<=1; j++){
+			for(int k=-1; j<=1; k++){
+				try {
+					if (minefield[x+j][y+k].tileState != -1) {
+						minefield[x+j][y+k].tileState++;
+					}
+				}
+				catch ( IndexOutOfBoundsException e ) {
+					break;
+				}
+			}
+		}
+	}
 
 /*
 * This method marks or unmarks a tile
@@ -159,14 +164,14 @@ public class Minefield {
 
 
     private class Tile extends StackPane {
-        private int x, y;
-        private int tileState;  // 0=no mines, 1-8 = num mines, -1 = mine
-        private boolean exposed;
-        private boolean marked;
+        int x, y;
+        int tileState;  // 0=no mines, 1-8 = num mines, -1 = mine
+        boolean exposed;
+        boolean marked;
 
         private Tile(int x, int y){
-            this.x = x;
-            this.y = y;
+            this.x = x; // column
+            this.y = y; // row
             tileState = 0;
 	        exposed = false;
 	        marked = false;
