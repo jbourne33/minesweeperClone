@@ -36,93 +36,27 @@
       </HBox>
    </bottom>
    <center>
-      <GridPane alignment="CENTER" gridLinesVisible="true" BorderPane.alignment="CENTER">
-        <columnConstraints>
-          <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="NEVER" minWidth="30.0" />
-          <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="NEVER" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="NEVER" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="NEVER" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="NEVER" minWidth="30.0" prefWidth="30.0" />
-            <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="NEVER" minWidth="30.0" />
-            <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="NEVER" minWidth="30.0" />
-            <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="NEVER" minWidth="30.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints fillHeight="false" minHeight="30.0" valignment="CENTER" vgrow="NEVER" />
-          <RowConstraints fillHeight="false" minHeight="30.0" valignment="CENTER" vgrow="NEVER" />
-          <RowConstraints fillHeight="false" minHeight="30.0" valignment="CENTER" vgrow="NEVER" />
-            <RowConstraints fillHeight="false" minHeight="30.0" valignment="CENTER" vgrow="NEVER" />
-            <RowConstraints fillHeight="false" minHeight="30.0" valignment="CENTER" vgrow="NEVER" />
-            <RowConstraints fillHeight="false" minHeight="30.0" valignment="CENTER" vgrow="NEVER" />
-            <RowConstraints fillHeight="false" minHeight="30.0" valignment="CENTER" vgrow="NEVER" />
-            <RowConstraints fillHeight="false" minHeight="30.0" valignment="CENTER" vgrow="NEVER" />
-        </rowConstraints>
-         <children>
-            <Button alignment="CENTER" contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="6" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="5" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="7" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.rowIndex="5" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.rowIndex="6" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.rowIndex="7" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="7" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="7" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="6" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-            <Button contentDisplay="CENTER" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-         </children>
+      <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
       </GridPane>
    </center>
 </BorderPane>
