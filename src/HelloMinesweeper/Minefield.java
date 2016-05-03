@@ -18,6 +18,9 @@ public class Minefield {
 	private int totalMines;
 	public static int MINE = -1;
 	private static int EMPTY = 0;
+	public static int EASY = 8;
+	public static int MEDIUM = 16;
+	public static int HARD = 20;
 
     // Default constructor which will be used for easy mode with 8x8 field
     public Minefield(){
@@ -45,17 +48,17 @@ public class Minefield {
 		Cols = columns;
 		numMines = 0;
 		marked = 0;
-		if(Rows == 8){
+		if(Rows == EASY){
 			// set variables to easy settings
-			totalMines = 10;
+			totalMines = 8;
 		}
-		if(Rows == 16){
+		if(Rows == MEDIUM){
 			// set variables to medium settings
 			totalMines = 40;
 		}
-		if(Rows == 30){
+		if(Rows == HARD){
 			// set variables to hard settings
-			totalMines = 99;
+			totalMines = 60;
 		}
 
 		minefield = new Tile[Rows][Cols];
@@ -173,6 +176,8 @@ public class Minefield {
 	public int getTileValue(int row, int col){
 		return minefield[row][col].tileState;
 	}
+
+	public boolean isMarked(int row, int col){return minefield[row][col].marked;}
 
     private class Tile extends StackPane {
         int col, row;

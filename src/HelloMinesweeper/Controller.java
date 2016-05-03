@@ -27,6 +27,9 @@ public class Controller {
 	private int Rows, Cols;
 	public static int MINE = -1;
 	public static int EMPTY = 0;
+	public static int EASY = 8;
+	public static int MEDIUM = 16;
+	public static int HARD = 20;
 
 
 
@@ -48,6 +51,7 @@ public class Controller {
 
 	@FXML
 	private void startGame() {
+		messageBox.setText("");
 		setRowsCols(difficultyMenu.getValue());
 		btns = new Button[Rows][Cols];
 		minefield = new Minefield(Rows, Cols);   // Minefield plants own mines and calculates states
@@ -59,8 +63,8 @@ public class Controller {
 				final int finJ = j;	// Row
 				final int finK = k; // Column
 				btns[j][k] = new Button();
-				btns[j][k].setMaxSize(40,40);
-				btns[j][k].setMinSize(40,40);
+				btns[j][k].setMaxSize(30,30);
+				btns[j][k].setMinSize(30,30);
 				btns[j][k].setText("");
 				btns[j][k].setOnMouseClicked(new EventHandler<MouseEvent>() {
 					@Override
@@ -140,38 +144,37 @@ public class Controller {
 				if (j == 0 && k == 0) continue;
 				if (rr >= 0 && rr < Rows && cc >= 0 && cc < Cols){
 					int btnValue = minefield.getTileValue(rr, cc);
+					if(minefield.isMarked(rr,cc))continue;
 					if(btnValue == EMPTY) {
 						minefield.expose(cc, rr);
 						btns[rr][cc].setStyle("-fx-background-color: lightgrey");
 						btns[rr][cc].setText("");
 						floodFill(rr,cc);
+						continue;
 					}
-					else{
-						if(!minefield.isExposed(cc, rr)){
-							minefield.expose(cc, rr);
-							btns[rr][cc].setText(Integer.toString(btnValue));
-						}
+					if(!minefield.isExposed(cc, rr)){
+						minefield.expose(cc, rr);
+						btns[rr][cc].setText(Integer.toString(btnValue));
 					}
 				}
 			}
 		}
-		return;
 	}
 
 
 	private void setRowsCols(String difficulty) {
 		switch (difficulty) {
 			case "Easy":
-				Rows = 8;
-				Cols = 8;
+				Rows = EASY;
+				Cols = EASY;
 				break;
 			case "Medium":
-				Rows = 16;
-				Cols = 16;
+				Rows = MEDIUM;
+				Cols = MEDIUM;
 				break;
 			case "Hard":
-				Rows = 30;
-				Cols = 16;
+				Rows = HARD;
+				Cols = HARD;
 		}
 		return;
 	}
