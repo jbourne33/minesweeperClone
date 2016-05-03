@@ -66,7 +66,7 @@ public class Minefield {
 				minefield[row][col] = temp;
 			}
 		}
-
+		unexposed = Rows * Cols - totalMines;
 		plantMines();
 		computeTileStates();
 	}
@@ -95,8 +95,8 @@ public class Minefield {
 	public void computeTileStates(){
 		for (int row = 0; row < Rows; row++){
 			for (int col = 0; col < Cols; col++){
-				if(minefield[col][row].tileState == MINE){
-					incrementNeighbors(col,row);
+				if(minefield[row][col].tileState == MINE){
+					incrementNeighbors(row,col);
 				}
 			}
 		}
@@ -106,11 +106,12 @@ public class Minefield {
 * This method is probably going over and causing a null pointer exception. need to put in an
 * if statement or something. Also check the tile initialization
 * */
-	private void incrementNeighbors(int col, int row){
-		for(int j= -1; j<=1; j++){ // row iterator
-			for(int k= -1; k<=1; k++){ // column iterator
+	private void incrementNeighbors(int row, int col){
+		for(int j = -1; j <= 1; j++){ // row iterator
+			for(int k = -1; k <= 1; k++){ // column iterator
+				int rr = row + j;
+				int cc = col + k;
 				if (j == 0 && k == 0) continue;
-				int rr = row+j, cc = col+k;
 				if (rr >= 0 && rr < Rows && cc >= 0 && cc < Cols){
 					if(minefield[rr][cc].tileState != MINE) {
 						minefield[rr][cc].tileState++;
@@ -127,22 +128,26 @@ public class Minefield {
 		if (!minefield[row][col].marked) {
 			minefield[row][col].marked = true; // set to true;
 			marked++;
+			numMines--;
 			return true;
 		}
 		else {
 			minefield[row][col].marked = false;// set to false;
 			marked--;
+			numMines++;
 			return false;
 		}
 	}
 
 
 	public int expose(int col, int row){ // REQUIRED METHOD
-	        return minefield[row][col].tileState;
+	    if(!minefield[row][col].exposed) unexposed--;
+		minefield[row][col].exposed = true;
+		return minefield[row][col].tileState;
     }
 
 
-// Returns a boolean value for whether or not the
+// Returns a boolean value for whether or not the tile is exposed already
     public boolean isExposed(int column, int row){ // REQUIRED METHOD (needs to return int?)
 		return minefield[column][row].exposed;
     }
@@ -154,18 +159,24 @@ public class Minefield {
 	*/
     public int unexposedCount(){ // REQUIRED METHOD
 	    return unexposed;
-    }
+    } // getter for unexposed
+
 
 	public int minesLeft() {return totalMines - numMines;}
+
 
 	public boolean win(){
 		return marked == numMines;
 	}
 
 
+	public int getTileValue(int row, int col){
+		return minefield[row][col].tileState;
+	}
+
     private class Tile extends StackPane {
         int col, row;
-        int tileState;  // 0=no mines, 1-8 = num mines, -1 = mine, 88 = uninitialized
+        int tileState;  // 0= EMPTY, 1-8 = num mines, -1 = MINE
         boolean exposed;
         boolean marked;
 

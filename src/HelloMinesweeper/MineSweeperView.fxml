@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane prefHeight="450.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloMinesweeper.Controller">
+<BorderPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloMinesweeper.Controller">
    <top>
       <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="154.0" BorderPane.alignment="CENTER">
          <children>
@@ -22,7 +22,8 @@
             <Button fx:id="startButton" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="90.0" text="Start" HBox.hgrow="SOMETIMES" />
             <AnchorPane prefHeight="31.0" prefWidth="164.0">
                <children>
-                  <Label fx:id="bombsLeft" alignment="CENTER_RIGHT" layoutX="210.0" layoutY="9.0" nodeOrientation="LEFT_TO_RIGHT" text="BombStatus" AnchorPane.rightAnchor="14.0" />
+                  <Label fx:id="tilesLeft" alignment="CENTER_RIGHT" layoutX="94.0" layoutY="9.0" prefHeight="17.0" prefWidth="89.0" text="BombStatus" textAlignment="RIGHT" AnchorPane.rightAnchor="-19.0" />
+                  <Label layoutX="23.0" layoutY="9.0" text="Bombs Left" textAlignment="CENTER" />
                </children>
             </AnchorPane>
          </children>
